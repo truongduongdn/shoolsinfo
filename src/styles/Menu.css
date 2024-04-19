@@ -1,0 +1,65 @@
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .logo-container {
+    flex: 1;
+  }
+  .logo {
+    max-width: 100px; /* Adjust the maximum width of the logo */
+    height: auto;
+  }
+  .logo {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  .catalog-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .catalog-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .submenu {
+    position: absolute;
+    background-color: #007bff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .submenu li {
+    padding: 10px;
+  }
+  
+  .submenu li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .submenu li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
