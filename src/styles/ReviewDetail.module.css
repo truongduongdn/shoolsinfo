@@ -1,0 +1,45 @@
+.review_detail {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+}
+
+.image_slider {
+  position: relative;
+}
+
+.main_image {
+  width: 100%;
+  height: auto;
+}
+
+.thumbnail_container {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.thumbnail {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+
+.thumbnail.active {
+  border: 2px solid #007bff;
+}
