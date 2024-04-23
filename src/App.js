@@ -11,12 +11,12 @@ function App() {
   return (
     <div className={style.App}>
       <Routes>
-        <Route path="/" element={<CatalogSchool />} /> {/* Home route */}
+        <Route path="/" element={<CatalogSchool />} />
         <Route path="/ReviewDetailPage" element={<ReviewDetailPage />} />
       </Routes>
       <Header />
       <CatalogSchool />
-      
+  
       <ReviewDetailPage  />
 
       <Footer />
