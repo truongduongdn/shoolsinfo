@@ -1,4 +1,4 @@
-@media (min-width: 1400px) {
+/* @media (min-width: 1400px) {
   .container {
     max-width: 1320px;
   }
@@ -6,97 +6,98 @@
 
 @media (min-width: 1200px) {
 
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl {
+  .container
+ {
     max-width: 1140px;
   }
 }
 
 @media (min-width: 992px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm {
+  .container {
     max-width: 960px;
   }
 }
 
 @media (min-width: 768px) {
 
-  .container,
-  .container-md,
-  .container-sm {
+  .container {
     max-width: 720px;
   }
 }
 
 @media (min-width: 576px) {
 
-  .container,
-  .container-sm {
+  .container{
     max-width: 540px;
   }
-}
+} */
 
 .container {
   background: var(--dark-background-color);
+  width: 100%;
+  align-items: center;
+
 }
 
 .row {
-  margin-top: 50px;
+  background-color: var(--dark-background-color);
+  padding: 10px;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
   flex-direction: row;
-  margin: 0 auto;
-  width: 100%;
-
-}
-
-.column {
-  width: 415px;
-  height: auto;
-  border-radius: 10px;
-  border: 1px solid #dddfe2;
-  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
-  position: relative;
-  display: flex;
-  flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
 }
 
-.school_card {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  background: #fff;
-  border: 1px solid #dddfe2;
+.column {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px
+}
+.column:hover{
 
 }
 
+.school_card {
+  width: 100%;
+  height: auto;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #dddfe2;
+  padding: 10px;
+  border: 1px solid #dddfe2;
+ 
+}
+.school_card:hover {
+  box-shadow: 0 .125rem .25rem rgb(255, 255, 255) !;
+}
+
 .image_item {
-  width: 415px;
-  height: 295px;
-  object-fit: cover;
+  width: 100%;
+  height: 300px;
   border-radius: 10px 10px 0 0;
   overflow: hidden;
-  padding-top: 71.14285714%;
-  
-  
-
+  padding-bottom: 5px;
 }
 
 .school_image {
   width: 100%;
   height: 100%;
-  
+  object-fit: cover;
+
 }
 
 .school_info {
-  
+  display: flex;
+  flex-direction: column;
 }
 
 .school_title {
