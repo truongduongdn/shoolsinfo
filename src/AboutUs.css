@@ -1,0 +1,89 @@
+.btn-primary{
+    position: relative;
+    margin-left: 580px;
+    transform: translateY(-480px);
+    color: var(--text) !important;
+}
+    /* second page */
+    .AboutUs_page-2{
+        transform: translateY(-80px);
+    }
+    .edit_textAboutUs{
+        text-align: justify;
+        margin: 20px 200px;
+        letter-spacing: 1px;
+        font-size: 16px;
+        margin-bottom: -10px;
+    }
+    .AboutUs_h6,
+    .AboutUs_main-2{
+        text-align: center;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+    .AboutUs_h6{
+        color: gray;
+    }
+    .AboutUs_main-2{
+        color: var(--mauchukhac);
+    }
+    .AboutUs_text-2{
+        color: var(--text);
+    }
+    /* third page */
+
+    .AboutUs_page-3,
+    .AboutUs_page-4{
+        margin-top: 100px;
+    }
+    .AboutUs-3_img{
+        margin-left: 174px;
+        height: 480px;
+        width: 1000px;
+        object-fit:cover;
+    }
+    .AboutUs-3_img-btn{
+        background-color: yellow;
+        width:38px;
+        border-radius: 100%;
+        border: 1px solid var();
+        transform: translateX(-60px);
+    }
+    .AboutUs-3_img-btn:hover{
+        background-color: black;
+        color: yellow;
+    }
+    /* fouth page */
+    .AboutUs-4_img{
+        height: 100%;
+        width: 100%;
+        object-fit:cover;
+        overflow: hidden;
+        /* position: relative; */
+        background-image: url(./img/z5378300383591_9ec28cf2d072cd48759e98e46e1da222.jpg);
+    }
+    /* .AboutUs-4_img:hover .overlay{
+        height: 100%;
+    }
+    .overlay_aboutUs{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 10px;
+        width: 100%;
+        background-color: var(--background);
+        transition: hight 0.3s ease;
+    }
+    .AboutUs-4_img-wrapper:hover .overlay_aboutUs{
+        height: 50%;
+    }  */
+    .AboutUs-4_listImage{
+        margin: 40px 150px;
+        display: flex;
+    }
+    .AboutUs_main-2{
+        letter-spacing: 10px;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    

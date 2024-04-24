@@ -1,0 +1,205 @@
+a{
+  text-decoration: none;
+}
+:root{
+  --btn:#8E5DF5;
+  --text: white;
+  --background: #26335D;
+  --mauchukhac: #895FF3;
+}
+.background_about{
+  background-color: var(--background) !important;
+  height: 100%;
+  width: 100% ;
+}
+.general_text-main{
+  position: relative;
+  transform: translateY(-500px);
+  color: var(--text);
+  font-size: 80px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  margin-left: 490px;
+}
+.img_general-startPage {
+  width: 100%;
+  height: 750px;
+  opacity: 0.8;
+  position: relative;
+}
+/* header_nav */
+.header_page {
+  position: relative;
+  z-index: 1;
+}
+.header_navbar{
+  margin-top: 10px;
+  position: fixed;
+  background-color: var(--background) !important ;
+  box-shadow: 5px 10px 8px #888888;
+  border: 1px solid gray;
+  border-radius: 8px;
+  z-index: 100;
+}
+.header_navbar a{
+  color: var(--text) !important;
+}
+.header_logo{
+  margin-left: 60px;
+  font-size: 22px;
+  font-style: italic;
+}
+.navbar{
+  height: 62px;
+  width: 100%;
+  z-index: 2;
+}
+.nav-item{
+  font-size: 16px !important;
+  font-weight: lighter;
+  margin-left: 80px ;
+  margin-right: 40px ;
+  padding: 6px;
+  position: relative;
+  border-radius: 6px;
+}
+.navbar-nav{
+  display: flex;
+}
+.nav-item:hover {
+  background: var(--mauchukhac);
+}
+
+.fa-graduation-cap{
+  color: var(--text) !important;
+  margin-left: 6px;
+}
+.icon_header{
+  margin-left: 110px;
+}
+/* home page 1 */
+.homepage_all-1,
+.homepage_all-2{
+  display: flex;
+}
+.home_img-1 {
+  transform: translateX(50px);
+  margin: 148px;
+  border-radius: 180px;
+  border: solid 2px var(--mauchukhac);
+  overflow: hidden;
+}
+.homepage_img-1{
+  transition: transform 0.3s ease; /* Thời gian và kiểu chuyển động */
+  position: relative;
+}
+.homepage_img-1:hover{
+  transform: scale(1.1);
+  transform-origin: center center;
+  opacity: 0.9;
+}
+.text_header-main{
+  margin-left: 140px;
+  font-weight: bold;
+}
+.opening_sentence{
+  color: var(--mauchukhac);
+  margin-top: 200px;
+}
+.main_saying{
+  color: var(--text);
+  font-size: 50px;
+  letter-spacing: 4px;
+}
+.success{
+  transform: translateY(-30px);
+}
+.success_2{
+  transform: translateY(-44px);
+}
+.secondary_saying{
+  color: gray
+}
+/* homepage 2 */
+.homepage_img-2{
+  margin-left: 20px;
+  height: 350px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.homepage_img-2:hover{
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+.home_img-2_up{
+  margin-bottom: 70px;
+}
+.home_img-2_mg{
+  margin-left: 50px !important;
+}
+.homepage_img-2{
+  transition: transform 0.3s ease; 
+  position: relative;
+}
+.homepage_img-2{
+  margin-top: 180px !important;
+}
+.home-about-2-2{
+  margin-top: 150px;
+  margin-left: 60px;
+  box-shadow: 5px 5px 5px 5px  #888888;
+  height: 420px;
+  position: relative;
+}
+.homepage_all-2{
+  background-color: var(--text );
+}
+.text_main-home{
+  font-size: 50px !important;
+  margin-left: 300px;
+  letter-spacing: 4px;
+  box-shadow: 4px gray;
+}
+.text_homepage-2{
+  color: var(--mauchukhac);
+  font-size: 30px;
+  margin-left: 30px;
+  position: relative;
+  z-index: 999;
+}
+.text_homepage-2-2{
+  margin-left: 40px;
+  font-size: 18px;
+
+  position: relative;
+  z-index: 999;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: var(--background); /* Màu sắc của hiệu ứng chạy */
+  transition: height 0.3s ease;
+}
+.home-about-2-2:hover .overlay {
+  height: 100%;
+}
+/* btn lien ket */
+.general_btn{
+  color: var(--text) !important;
+  width: 180px !important;
+}
+.general_btn:hover{
+  background-color: var(--text) !important;
+  color: var(--btn) !important;
+}
+.btn_aboutUs{
+  background-color: var(--btn);
+  margin-right: 10px;
+}
+.btn_contact{
+  border: solid 1px white;
+}
