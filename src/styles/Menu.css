@@ -1,21 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: auto;
+}
+body{
+  height: 100vh;
+  
+}
 .menu-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: var(--dark-background-color);
     color: white;
   }
   
   .logo-container {
-    flex: 1;
+  margin-left: 20px;
   }
   .logo {
-    max-width: 100px; /* Adjust the maximum width of the logo */
-    height: auto;
-  }
-  .logo {
-    max-width: 100px;
+    max-width: 150px; /* Adjust the maximum width of the logo */
     height: auto;
   }
   
@@ -32,7 +37,7 @@
   
   .catalog-button {
     background-color: transparent;
-    color: white;
+    color: var(--btn-primary);
     border: none;
     padding: 8px 16px;
     cursor: pointer;

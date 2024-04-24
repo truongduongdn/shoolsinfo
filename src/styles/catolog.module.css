@@ -1,77 +1,139 @@
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 576px) {
+
+  .container,
+  .container-sm {
+    max-width: 540px;
+  }
+}
+
+.container {
+  background: var(--dark-background-color);
+}
 
 .row {
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: 0 auto;
-    width: 100%; 
-    
-  }
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 100%;
+
+}
+
+.column {
+  width: 415px;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #dddfe2;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+}
+
+.school_card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border: 1px solid #dddfe2;
+
+}
+
+.image_item {
+  width: 415px;
+  height: 295px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  padding-top: 71.14285714%;
   
-  .column {
-    width: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-    gap: 10px;
-    margin-left: 10px;
-  }
-  .school_card {
-display: flex;
+  
+
+}
+
+.school_image {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.school_info {
+  
+}
+
+.school_title {
+  margin-bottom: 5px;
+  color: red;
+}
+
+.school_rating {
+  display: flex;
   align-items: center;
-  border-radius: 5px;
-   
-  }
-  
-  .school_image {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-right: 15px;
-  }
-  
-  .school_info {
-    flex: 1;
-  }
-  
-  .school_title {
-    margin-bottom: 5px;
-    color: red;
-  }
-  
-  .school_rating {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
-  }
-  
-  .rating_stars {
-    font-size: 18px;
-    color: orange;
-  }
-  
-  .rating_text {
-    margin-left: 5px;
-    font-size: 14px;
-    color: gray;
-  }
-  
-  .tag_catalog {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .tag {
-    margin-right: 10px;
-    padding: 5px 10px;
-    border-radius: 3px;
-    background-color: lightblue;
-    color: #333;
-    font-size: 12px;
-  }
+  margin-bottom: 5px;
+}
+
+.rating_stars {
+  font-size: 18px;
+  color: orange;
+}
+
+.rating_text {
+  margin-left: 5px;
+  font-size: 14px;
+  color: gray;
+}
+
+.tag_catalog {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tag {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: lightblue;
+  color: #333;
+  font-size: 12px;
+}
