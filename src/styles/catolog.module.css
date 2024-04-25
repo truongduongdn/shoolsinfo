@@ -1,4 +1,4 @@
-@media (min-width: 1400px) {
+/* @media (min-width: 1400px) {
   .container {
     max-width: 1320px;
   }
@@ -39,7 +39,7 @@
   .container-sm {
     max-width: 540px;
   }
-}
+} */
 
 .container {
   background: var(--dark-background-color);
@@ -52,6 +52,7 @@
   flex-direction: row;
   margin: 0 auto;
   width: 100%;
+  background: var(--shadow-background-color);
 
 }
 
@@ -61,7 +62,6 @@
   border-radius: 10px;
   border: 1px solid #dddfe2;
   box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
-  position: relative;
   display: flex;
   flex-direction: column;
   min-width: 0;
@@ -69,21 +69,22 @@
 }
 
 .school_card {
-  position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background: #fff;
   border: 1px solid #dddfe2;
+  border-radius: 10px;
+  margin: 10px;
 
 }
 
 .image_item {
-  width: 415px;
-  height: 295px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
-  overflow: hidden;
-  padding-top: 71.14285714%;
+    overflow: hidden;
+  
   
   
 
