@@ -1,5 +1,6 @@
 import React, { useState,useRef } from 'react';
-
+import { motion, AnimatePresence } from "framer-motion";
+import background_aboutUs from '../assets/images/z5378342114979_07371fba7db92a48385c228c535b47b1.jpg'
 function AboutUs(props) {
     let [imageAboutUs, setImageAboutUs] = useState('https://dplusvn.com/wp-content/uploads/2020/02/hinh-anh-van-phong-cong-ty-amvest.jpg')
     let sectionRef= useRef(null)
@@ -20,6 +21,17 @@ function AboutUs(props) {
             setImageAboutUs('https://dplusvn.com/wp-content/uploads/2020/02/hinh-anh-van-phong-cong-ty-amvest.jpg')
         }
     }
+    let Slideshow = ({ image }) => (
+        <AnimatePresence>
+    <motion.img
+      key={image.src} // Đảm bảo sử dụng key duy nhất cho mỗi ảnh để Framer Motion hiểu rằng ảnh đã thay đổi
+      src={image.src} // Sử dụng đường dẫn của ảnh từ props image
+      initial={{ opacity: 0, y: 200 }} // Hiệu ứng ban đầu
+      animate={{ opacity: 1 }} // Hiệu ứng khi ảnh hiển thị
+      exit={{ opacity: 0 }} // Hiệu ứng khi ảnh ra đi
+    />
+  </AnimatePresence>
+);
     function scroolToSection(){
         sectionRef.current.scrollIntoView({behavior:'smooth'})
     }
@@ -50,14 +62,14 @@ function AboutUs(props) {
             {/* third page */}
             <div className='AboutUs_page-3'>
                 <img className='AboutUs-3_img' src={imageAboutUs} alt='Hình ảnh' />
-                <button className='btn AboutUs-3_img-btn' onClick={handleChangeImageAboutUs}>-</button>
+                
             </div>
             {/* fouth page */}
             <div className='AboutUs_page-4' ref={sectionRef}>
                 <h6 className='AboutUs_h6'>TEAM</h6>
                 <h2 className='AboutUs_main-2'>Board Management</h2>
                 <div className='AboutUs-4_listImage'>
-                    <img></img>
+                    <img src={background_aboutUs} />
                 </div>
             </div>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import second_home from '../assets/images/images.jpeg'
+import background_home from '../assets/images/56127bf1dd089521558b4574-1536-1024--1--min--1--1504234772-width1536height1024.jpg'
 function HomePage(props) {
     let navigate = useNavigate();
     function handleNavigateAboutUs() {
@@ -13,7 +14,7 @@ function HomePage(props) {
         <div className='Home_page background_about'>
             <div className='homepage_all'>
                 <div className='home_about'>
-                    <img className='img_general-startPage' src='https://cdn.eva.vn/upload/3-2017/images/2017-09-01/56127bf1dd089521558b4574-1536-1024--1--min--1--1504234772-width1536height1024.jpg'></img>
+                    <img className='img_general-startPage' src={background_home}></img>
                     <p className='general_text-main text_main-home'>BRING SUCCESS TO EVERYONE</p>
                 </div>
             </div>
@@ -29,7 +30,7 @@ function HomePage(props) {
                     <button onClick={handleNavigateContact} className='btn btn_contact general_btn success'>Contact</button>
                 </div>
                 <div className='home_img-1'>
-                    <img className='homepage_img-1' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRVD0h1Rs_yMl0u37BCjlJywbuXKIs8jKWUtF5MXQdrQ&s' alt='ảnh học tập' width="530" height="450" ></img>
+                    <img className='homepage_img-1' src={second_home} alt='ảnh học tập' width="530" height="450" ></img>
                 </div>
             </div>
             {/* second page */}
