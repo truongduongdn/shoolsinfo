@@ -4,6 +4,9 @@
     transform: translateY(-480px);
     color: var(--text) !important;
 }
+/* .img_general-startPage{
+    background-image: url(../public/img/10-ngoi-truong-dai-hoc-co-dep-1498580887-dGwZTP.jpg);
+} */
     /* second page */
     .AboutUs_page-2{
         transform: translateY(-80px);
@@ -59,24 +62,7 @@
         width: 100%;
         object-fit:cover;
         overflow: hidden;
-        /* position: relative; */
-        background-image: url(./img/z5378300383591_9ec28cf2d072cd48759e98e46e1da222.jpg);
     }
-    /* .AboutUs-4_img:hover .overlay{
-        height: 100%;
-    }
-    .overlay_aboutUs{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        height: 10px;
-        width: 100%;
-        background-color: var(--background);
-        transition: hight 0.3s ease;
-    }
-    .AboutUs-4_img-wrapper:hover .overlay_aboutUs{
-        height: 50%;
-    }  */
     .AboutUs-4_listImage{
         margin: 40px 150px;
         display: flex;

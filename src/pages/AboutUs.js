@@ -57,12 +57,7 @@ function AboutUs(props) {
                 <h6 className='AboutUs_h6'>TEAM</h6>
                 <h2 className='AboutUs_main-2'>Board Management</h2>
                 <div className='AboutUs-4_listImage'>
-                    <img className='AboutUs-4_img' src='../img/4(3).jpg'></img>
-                    {/* <img className='AboutUs-4_img ' src='https://aobongda.net/pic/Images/Module/News/images/4(3).jpg'></img>
-                    <img className='AboutUs-4_img' src='https://aobongda.net/pic/Images/Module/News/images/4(3).jpg'></img>
-                    <img className='AboutUs-4_img' src='https://aobongda.net/pic/Images/Module/News/images/4(3).jpg'></img>
-                    <img className='AboutUs-4_img' src='https://aobongda.net/pic/Images/Module/News/images/4(3).jpg'></img>
-                    <div className='overlay_aboutUs'></div> */}
+                    <img></img>
                 </div>
             </div>
         </div>
