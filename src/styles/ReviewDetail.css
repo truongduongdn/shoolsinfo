@@ -1,0 +1,277 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+} 
+body{background:var();}
+@media (min-width: 1200px) {
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 95%;
+      width: 1370px;
+    }
+  }
+.review-detail-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px auto;
+}
+.column1 { 
+  width: 50%; 
+  background: var(----dark-background-color);
+}
+.column2 {
+  width: 50%;
+  background: var(--background);
+  color: var(--text);
+}
+.review_detail {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.image_slider {
+  position: relative;
+}
+
+.main_image {
+  width: 100%;
+  height: auto;
+}
+
+.thumbnail_container {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.carousel{
+  background:var(--background);
+}
+.carousel .thumbs-wrapper{
+  margin: 0px auto !important
+}
+
+.carousel .thumbs-wrapper {
+  margin-top: 20px; 
+}
+
+.carousel .thumbs {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel .thumb {
+  width: 150px; 
+  height: auto; 
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel .thumb img {
+  max-width: 100%; 
+  max-height: 100px; 
+}
+/* Collum2 review  */
+.review-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 100%; */
+  /* background-color: #f0f0f0; */
+  padding: 20px;
+}
+.review-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  justify-content: left;
+}
+.review-stars {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 10px;
+}
+.review-star {
+  font-size: 24px;
+  color: orange;
+  margin: 0 2px;
+}
+.review-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.review-category {
+  width: 40%;
+    margin: 5px;
+  text-align: right;
+  font-size: 18px;
+  font-weight: 700;
+}
+.review-rating {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.review-description {
+  text-align: center;
+}
+.review-container-rating{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  width: auto !important;
+  font-size: 24px;
+  color: orange;
+  margin: 0 2px;
+  padding-left:20px ;
+
+}
+.review-category-rating{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.review-container-number{
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  width: auto !important;
+  font-size: 24px;
+  color: white;
+  margin: 0 2px;
+  padding-left:20px ;
+}
+/* Detail about school */
+
+.about_School,
+.about_School_teacher {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow:5px 5px 5px 5px var(--light-gray-2);
+}
+
+/* Styles for the first section */
+section>h2{
+  color: var( --alert-text-color);
+  background-color: #f5f5f5;
+  margin-bottom: 1rem; 
+  border: 1px solid #ddd; 
+  overflow: hidden;
+  padding: 1rem; /* Padding for header content */
+  background-color: #eee; /* Light background for headers */
+  border-bottom: 1px solid #ddd; /* Border to separate headers */
+}
+section>p{
+  justify-content: right;
+  color: var(-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+}
+h2{
+  justify-content: left !important;
+}
+.about_School>h2 {
+  
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about_School>p {
+  justify-content: left;
+  color: var(-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Styles for the second section */
+.about_School_teacher>h2 {
+  color: var(-text-color);
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about_School_teacher > p {
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.5;
+}
+/* //rading advantagers */
+/* Overall accordion styles (assuming accordion functionality is handled by JavaScript) */
+.accordion_custom {
+  margin-bottom: 1rem; /* Add some space after the accordion */
+  border: 1px solid #ddd; /* Add a light border */
+  border-radius: 4px; /* Add rounded corners */
+  overflow: hidden; /* Needed for proper accordion behavior */
+}
+
+.accordion_custom h5 {
+  cursor: pointer; /* Indicate clickable behavior for headers */
+  padding: 1rem; /* Padding for header content */
+  background-color: #eee; /* Light background for headers */
+  border-bottom: 1px solid #ddd; /* Border to separate headers */
+}
+
+.accordion_custom h5.active {
+  background-color: #f5f5f5; /* Change background for active header */
+}
+
+.accordion_custom .row {
+  display: flex; /* Use flexbox for columns */
+  flex-wrap: wrap; /* Allow items to wrap if needed */
+}
+
+.accordion_custom .col {
+  flex: 1; /* Make columns evenly sized */
+  padding: 1rem; /* Padding for content within columns */
+}
+
+/* Rating item styles */
+.rating-item {
+  margin-bottom: 0.5rem; /* Add some space between items */
+  display: flex; /* Arrange title and score horizontally */
+  align-items: center; /* Align content vertically */
+}
+
+.rating-title {
+  flex: 1; /* Make title flexible to take up most space */
+}
+
+.rating-score {
+  font-weight: bold; /* Emphasize rating scores */
+}
+.two-column-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.column h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.column p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+p li {
+  list-style-type: none;
+  text-align: left;
+}
