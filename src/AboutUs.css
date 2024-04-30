@@ -45,6 +45,7 @@
         width: 1000px;
         object-fit:cover;
     }
+    .AboutUs-3_img-btn2,
     .AboutUs-3_img-btn{
         background-color: yellow;
         width:38px;
@@ -56,16 +57,34 @@
         background-color: black;
         color: yellow;
     }
+    .AboutUs-3_img-btn2{
+        transform: translateX(-1014px)
+    }
     /* fouth page */
-    .AboutUs-4_img{
-        height: 100%;
+    .anh_nen-aboutUs{
+        height: 360px;
+        width: 252px;
+        object-fit: cover;
+    }
+    .overlay2{
+        position: absolute;
+        bottom: 0;
+        left: 0;
         width: 100%;
-        object-fit:cover;
-        overflow: hidden;
+        height: 10px;
+        background-color: var(--text); /* Màu sắc của hiệu ứng chạy */
+        transition: height 0.3s ease;
     }
     .AboutUs-4_listImage{
         margin: 40px 150px;
         display: flex;
+    }
+    .anh_ngoai_nen-1{
+        position: relative;
+        overflow: hidden; 
+    }
+    .anh_nen-aboutUs:hover .overlay2{
+        height: 100%;
     }
     .AboutUs_main-2{
         letter-spacing: 10px;

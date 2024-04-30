@@ -1,45 +1,53 @@
-import React, { useState,useRef } from 'react';
-import { motion, AnimatePresence } from "framer-motion";
-import background_aboutUs from '../assets/images/z5378342114979_07371fba7db92a48385c228c535b47b1.jpg'
+import React, { useState, useRef } from 'react';
+import background_aboutUs from '../assets/images/hinh_nen-aboutus.jpg'
+import anh_2 from '../assets/images/hinh-anh-van-phong-cong-ty-carbonleo-2.jpg'
+import anh_4 from '../assets/images/thiet-ke-phong-lam-viec-noi-cong-so.jpg'
+import anh_5 from '../assets/images/Van-phong-lam-viec-hien-dai-su-dung-vach-ngan-lung-19-0.jpg'
+import anh_6 from '../assets/images/hinh-anh-van-phong-cong-ty-casanova-mccann-2.jpg'
+import anh_7 from '../assets/images/mau-thiet-ke-van-phong-hien-dai-dep.jpg'
+import anh_3 from '../assets/images/cham-soc-cay-canh-cong-trinh.jpg'
+import anh_nen_1 from '../assets/images/z5378342114979_07371fba7db92a48385c228c535b47b1.jpg'
 function AboutUs(props) {
-    let [imageAboutUs, setImageAboutUs] = useState('https://dplusvn.com/wp-content/uploads/2020/02/hinh-anh-van-phong-cong-ty-amvest.jpg')
-    let sectionRef= useRef(null)
+    let [imageAboutUs, setImageAboutUs] = useState(anh_2)
+    let sectionRef = useRef(null)
     function handleChangeImageAboutUs() {
-        if (imageAboutUs === 'https://dplusvn.com/wp-content/uploads/2020/02/hinh-anh-van-phong-cong-ty-amvest.jpg') {
-            setImageAboutUs('https://dplusvn.com/wp-content/uploads/2020/02/hinh-anh-van-phong-cong-ty-carbonleo-2.jpg')
-        } else if (imageAboutUs === 'https://dplusvn.com/wp-content/uploads/2020/02/hinh-anh-van-phong-cong-ty-carbonleo-2.jpg') {
-            setImageAboutUs('https://dplusvn.com/wp-content/uploads/2020/02/hinh-anh-van-phong-cong-ty-zola-2.jpg')
-        } else if (imageAboutUs === 'https://dplusvn.com/wp-content/uploads/2020/02/hinh-anh-van-phong-cong-ty-zola-2.jpg') {
-            setImageAboutUs('https://dplusvn.com/wp-content/uploads/2020/02/van-phong-cong-ty-hyundai-card-pixel-factory.jpg')
-        } else if (imageAboutUs === 'https://dplusvn.com/wp-content/uploads/2020/02/van-phong-cong-ty-hyundai-card-pixel-factory.jpg') {
-            setImageAboutUs('https://dplusvn.com/wp-content/uploads/2020/02/hinh-anh-van-phong-amorepacific-f21.jpg')
-        } else if (imageAboutUs === 'https://dplusvn.com/wp-content/uploads/2020/02/hinh-anh-van-phong-amorepacific-f21.jpg') {
-            setImageAboutUs('https://noithatledinh.vn/Images/thiet-ke-noi-that-van-phong-1(8).jpg')
-        } else if (imageAboutUs === 'https://noithatledinh.vn/Images/thiet-ke-noi-that-van-phong-1(8).jpg') {
-            setImageAboutUs('https://greenhouse.com.vn/upload/data/images/du-an/120-mau-thiet-ke-biet-thu-san-vuon-dep-an-tuong-nhat-nam-2020-19(2).jpg')
-        } else if (imageAboutUs === 'https://greenhouse.com.vn/upload/data/images/du-an/120-mau-thiet-ke-biet-thu-san-vuon-dep-an-tuong-nhat-nam-2020-19(2).jpg') {
-            setImageAboutUs('https://dplusvn.com/wp-content/uploads/2020/02/hinh-anh-van-phong-cong-ty-amvest.jpg')
+        if (imageAboutUs === anh_2) {
+            setImageAboutUs(anh_3)
+        } else if (imageAboutUs === anh_3) {
+            setImageAboutUs(anh_4)
+        } else if (imageAboutUs === anh_4) {
+            setImageAboutUs(anh_5)
+        } else if (imageAboutUs === anh_5) {
+            setImageAboutUs(anh_6)
+        } else if (imageAboutUs === anh_6) {
+            setImageAboutUs(anh_7)
+        } else if (imageAboutUs === anh_7) {
+            setImageAboutUs(anh_2)
         }
     }
-    let Slideshow = ({ image }) => (
-        <AnimatePresence>
-    <motion.img
-      key={image.src} // Đảm bảo sử dụng key duy nhất cho mỗi ảnh để Framer Motion hiểu rằng ảnh đã thay đổi
-      src={image.src} // Sử dụng đường dẫn của ảnh từ props image
-      initial={{ opacity: 0, y: 200 }} // Hiệu ứng ban đầu
-      animate={{ opacity: 1 }} // Hiệu ứng khi ảnh hiển thị
-      exit={{ opacity: 0 }} // Hiệu ứng khi ảnh ra đi
-    />
-  </AnimatePresence>
-);
-    function scroolToSection(){
-        sectionRef.current.scrollIntoView({behavior:'smooth'})
+    function handleChangeImageAboutUs_before() {
+        if (imageAboutUs === anh_7) {
+            setImageAboutUs(anh_6)
+        } else if (imageAboutUs === anh_6) {
+            setImageAboutUs(anh_5)
+        } else if (imageAboutUs === anh_5) {
+            setImageAboutUs(anh_4)
+        } else if (imageAboutUs === anh_4) {
+            setImageAboutUs(anh_3)
+        } else if (imageAboutUs === anh_3) {
+            setImageAboutUs(anh_2)
+        } else if (imageAboutUs === anh_2) {
+            setImageAboutUs(anh_7)
+        }
+    }
+    function scroolToSection() {
+        sectionRef.current.scrollIntoView({ behavior: 'smooth' })
     }
     return (
         <div className=' AboutUs_page background_about'>
             {/* first page */}
             <div className='AboutUs_page-1'>
-                <img className='img_general-startPage ' src='https://duhochoanmy.vn/custom/domain_1/articles/fullsize/article13901/10-ngoi-truong-dai-hoc-co-dep-1498580887-dGwZTP.jpg' alt='truong hoc about us'></img>
+                <img className='img_general-startPage ' src={background_aboutUs} alt='truong hoc about us'></img>
                 <p className='general_text-main'>About Us</p>
                 <button className='btn btn-primary general_btn' onClick={scroolToSection}>Member</button>
             </div>
@@ -62,14 +70,31 @@ function AboutUs(props) {
             {/* third page */}
             <div className='AboutUs_page-3'>
                 <img className='AboutUs-3_img' src={imageAboutUs} alt='Hình ảnh' />
-                
+                <button className='btn AboutUs-3_img-btn' onClick={handleChangeImageAboutUs}>+</button>
+                <button className='btn AboutUs-3_img-btn2' onClick={handleChangeImageAboutUs_before}>-</button>
             </div>
             {/* fouth page */}
             <div className='AboutUs_page-4' ref={sectionRef}>
                 <h6 className='AboutUs_h6'>TEAM</h6>
                 <h2 className='AboutUs_main-2'>Board Management</h2>
                 <div className='AboutUs-4_listImage'>
-                    <img src={background_aboutUs} />
+                    <div className='anh_ngoai_nen-1'>
+                        <img className='anh_nen-aboutUs' src={anh_nen_1}></img>
+                    </div>
+
+                    <div className='anh_ngoai_nen-2'>
+                        <img className='anh_nen-aboutUs' src={anh_nen_1}></img>
+                    </div>
+
+                    <div className='anh_ngoai_nen-3'>
+                        <img className='anh_nen-aboutUs' src={anh_nen_1}></img>
+                    </div>
+
+                    <div className='anh_ngoai_nen-4'>
+                        <img className='anh_nen-aboutUs' src={anh_nen_1}></img>
+                    </div>
+
+                    <div className='anh_ngoai_nen' class="overlay2"></div>
                 </div>
             </div>
         </div>
