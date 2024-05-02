@@ -1,22 +1,22 @@
 import React from 'react';
+// import '../styles/ReviewDetail.css';
+// import '../styles/root.module.css';
 import '../styles/ReviewDetail.css';
-import '../styles/root.module.css';
-import { useEffect } from 'react';
+
+// import { useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { ProgressBar } from 'react-bootstrap';
-import StudentSatisfaction from '../component/Process_bar';
+// import { ProgressBar } from 'react-bootstrap';
+// import StudentSatisfaction from '../component/Process_bar';
+import ReviewSchool from '../component/ReviewSchool';
+
 function ReviewDetailPage(props) {
     const progressValue = 70;
 
     return (
 
 
-        <div className='container'>
-
-
-
-
+        <div className='detail-container'>
             <div className="review-detail-container">
                 <div className="column1">
                     <div className="slideshow-gallery">
@@ -41,7 +41,7 @@ function ReviewDetailPage(props) {
                                 <img src="../TruongTHCS_Tran_Phu.jpg" alt="Cinque Terre" />
 
                             </div>
-                            {/* Add more slides as needed */}
+
                         </Carousel>
                     </div>
                 </div>
@@ -63,31 +63,30 @@ function ReviewDetailPage(props) {
                                 </div>
                                 <p class="review-description">Xem chi tiết 635 đánh giá</p>
                                 <div class="review-category-rating">
-                                    <div class="review-category">Cơ sở vật chất</div>
-                                    <div class="review-container-number">3/5</div>
-                                    <div class="review-container-rating">★★★★★</div>
+                                    <div class="review-category">Tư thục</div>
+                                    <div class="review-container-number">319
+                                        Khuyên học</div>
+                                    <div class="review-container-rating">616
+                                        Đăng ký học</div>
                                 </div>
-                                <div class="review-category-rating">
+                                {/* <div class="review-category-rating">
                                     <div class="review-category">Chất lượng giáo dục</div>
                                     <div class="review-container-number">3/5</div>
                                     <div class="review-container-rating">★★★★★★</div>
-                                </div>
-                                <div class="review-category-rating">
-                                    <div class="review-category">An ninh, vệ sinh, thực đơn</div>
-                                    <div class="review-container-number">3/5</div>
-                                    <div class="review-container-rating">★★★★★★</div>
-                                </div>
+                                </div> */}
+                                {/* 
+                                 */}
 
-                                <div class="review-category-rating">
+                                {/* <div class="review-category-rating">
                                     <div class="review-category">Sự phát triển của bé</div>
                                     <div class="review-container-number">3/5</div>
                                     <div class="review-container-rating">★★★★★★</div>
-                                </div>
-                                <div class="review-category-rating">
+                                </div> */}
+                                {/* <div class="review-category-rating">
                                     <div class="review-category">Tương xứng với học phí</div>
                                     <div class="review-container-number">3/5</div>
                                     <div class="review-container-rating">★★★★★★</div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -100,7 +99,7 @@ function ReviewDetailPage(props) {
                     <div className="two-column-section">
                         <div className="column">
                             <h2>Info</h2>
-                            <p style={{color:'var(--))'}}>Khoảng học phí
+                            <p style={{ color: 'var(--))' }}>Khoảng học phí
 
                                 Từ 8 triệu đến 9 triệu VND / tháng
                                 <li> <i className="fas fa-envelope"></i> Chi tiết biểu phí và chính sách học phí   <i className="far fa-hand-point-right"></i></li>
@@ -120,9 +119,9 @@ function ReviewDetailPage(props) {
 
                 <section class="about_School">
                     <div class="progress">
-                        <div className="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style={{ width: '70%' }}>
+                        {/* <div className="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style={{ width: '70%' }}>
                             <span class="sr-only">70% Complete</span>
-                        </div>
+                        </div> */}
                     </div>
                     <h2> Giới thiệu chung Trường TH-THCS Pathway Tuệ Đức - cơ sở Nguyễn Thị Định</h2>
                     <p> Giới thiệu chung Trường TH-THCS Pathway Tuệ Đức - cơ sở Nguyễn Thị Định
@@ -147,11 +146,15 @@ function ReviewDetailPage(props) {
                         Nhà trường rất ít thay đổi giáo viên. Thông thường, nhà trường bố trí giáo viên theo lớp và theo niên học.
                     </p>
                 </section>
+                <section className="Write-reivew">
+                    <h2 style={{ textAlign: 'left' }}>Write review</h2>
+                    <ReviewSchool />
+                </section>
                 <section className="map">
-                <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.874562700104!2d106.63249657576847!3d10.820910258370157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529db02a3e37f%3A0xc6201d0c33e11e98!2zVHLGsOG7nW5nIFRIQ1MgLSBUSFBUIFBhdGh3YXkgVHXhu4cgxJDhu6ljIC0gQ8ahIHPhu58gTmd1eeG7hW4gU-G7uSBTw6FjaCwgUXXhuq1uIFTDom4gQsOsbmg!5e0!3m2!1sen!2s!4v1714378862667!5m2!1sen!2s" 
-    style={{width:"600",  height:"450"}}  allowfullscreen=""      loading="lazy"     referrerpolicy="no-referrer-when-downgrade" ></iframe>
-                    
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.874562700104!2d106.63249657576847!3d10.820910258370157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529db02a3e37f%3A0xc6201d0c33e11e98!2zVHLGsOG7nW5nIFRIQ1MgLSBUSFBUIFBhdGh3YXkgVHXhu4cgxJDhu6ljIC0gQ8ahIHPhu58gTmd1eeG7hW4gU-G7uSBTw6FjaCwgUXXhuq1uIFTDom4gQsOsbmg!5e0!3m2!1sen!2s!4v1714378862667!5m2!1sen!2s"
+                        style={{ width: "600", height: "450" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+
                 </section>
             </div>
         </div>

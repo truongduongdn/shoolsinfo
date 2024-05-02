@@ -1,17 +1,17 @@
-.container {
+.detail-container {
   display: flex;
   flex-direction: column;
   width: 100%;
 } 
 body{background:var();}
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
     .container {
       margin-left: auto;
       margin-right: auto;
       max-width: 95%;
       width: 1370px;
     }
-  }
+  } */
 .review-detail-container{
   width: 100%;
   display: flex;
@@ -21,7 +21,7 @@ body{background:var();}
 }
 .column1 { 
   width: 50%; 
-  background: var(----dark-background-color);
+  /* background: var(----dark-background-color); */
 }
 .column2 {
   width: 50%;
@@ -51,14 +51,16 @@ body{background:var();}
   justify-content: space-between;
 }
 .carousel{
+
   background:var(--background);
 }
 .carousel .thumbs-wrapper{
-  margin: 0px auto !important
+ padding: 10px;
+
 }
 
 .carousel .thumbs-wrapper {
-  margin-top: 20px; 
+
 }
 
 .carousel .thumbs {
@@ -98,7 +100,7 @@ body{background:var();}
   margin-bottom: 10px;
 }
 .review-star {
-  font-size: 24px;
+  font-size: 18px;
   color: orange;
   margin: 0 2px;
 }
@@ -129,7 +131,7 @@ body{background:var();}
   flex-direction: row;
   align-items: space-between;
   width: auto !important;
-  font-size: 24px;
+  font-size: 18px;
   color: orange;
   margin: 0 2px;
   padding-left:20px ;
@@ -145,7 +147,7 @@ body{background:var();}
   flex-direction: row;
   align-items: space-between;
   width: auto !important;
-  font-size: 24px;
+  font-size: 18px;
   color: white;
   margin: 0 2px;
   padding-left:20px ;
@@ -167,15 +169,26 @@ section>h2{
   margin-bottom: 1rem; 
   border: 1px solid #ddd; 
   overflow: hidden;
-  padding: 1rem; /* Padding for header content */
-  background-color: #eee; /* Light background for headers */
-  border-bottom: 1px solid #ddd; /* Border to separate headers */
+  padding: 1rem; 
+  background-color: #eee;
+  border-bottom: 1px solid #ddd; 
 }
 section>p{
   justify-content: right;
   color: var(-text-color);
   font-size: 16px;
   line-height: 1.5;
+}
+.Write-reivew{color: var( --alert-text-color);
+  background-color: #f5f5f5;
+  margin-bottom: 1rem; 
+  border: 1px solid #ddd; 
+  overflow: hidden;
+  padding: 1rem; 
+  background-color: #eee; 
+  border-bottom: 1px solid #ddd; 
+  
+
 }
 h2{
   justify-content: left !important;
@@ -207,49 +220,45 @@ h2{
   font-size: 16px;
   line-height: 1.5;
 }
-/* //rading advantagers */
-/* Overall accordion styles (assuming accordion functionality is handled by JavaScript) */
+
 .accordion_custom {
-  margin-bottom: 1rem; /* Add some space after the accordion */
-  border: 1px solid #ddd; /* Add a light border */
-  border-radius: 4px; /* Add rounded corners */
-  overflow: hidden; /* Needed for proper accordion behavior */
+  margin-bottom: 1rem; 
+  border: 1px solid #ddd; 
+  overflow: hidden; 
 }
 
 .accordion_custom h5 {
-  cursor: pointer; /* Indicate clickable behavior for headers */
-  padding: 1rem; /* Padding for header content */
-  background-color: #eee; /* Light background for headers */
-  border-bottom: 1px solid #ddd; /* Border to separate headers */
+  cursor: pointer; 
+  padding: 1rem;
+  border-bottom: 1px solid #ddd; 
 }
 
 .accordion_custom h5.active {
-  background-color: #f5f5f5; /* Change background for active header */
+  background-color: #f5f5f5; 
 }
 
 .accordion_custom .row {
-  display: flex; /* Use flexbox for columns */
-  flex-wrap: wrap; /* Allow items to wrap if needed */
+  display: flex; 
+  flex-wrap: wrap; 
 }
 
 .accordion_custom .col {
-  flex: 1; /* Make columns evenly sized */
-  padding: 1rem; /* Padding for content within columns */
-}
+  flex: 1; 
+  padding: 1rem; }
 
-/* Rating item styles */
+
 .rating-item {
-  margin-bottom: 0.5rem; /* Add some space between items */
-  display: flex; /* Arrange title and score horizontally */
-  align-items: center; /* Align content vertically */
+  margin-bottom: 0.5rem;
+  display: flex; 
+  align-items: center; 
 }
 
 .rating-title {
-  flex: 1; /* Make title flexible to take up most space */
+  flex: 1; 
 }
 
 .rating-score {
-  font-weight: bold; /* Emphasize rating scores */
+  font-weight: bold; 
 }
 .two-column-section {
   display: flex;

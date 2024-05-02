@@ -1,7 +1,12 @@
   .footer_container {
     margin-top: 20px;
       width: 100%;
-      background-color: var(--dark-background-color);
+      /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/asset/bgfooter2.png"); */
+      background-repeat: no-repeat;
+      background-position: 0px 50px ;
+      background-size: contain;
+      backdrop-filter: blur(10px) brightness(0.8);
+       background-color: var(--dark-background-color);
       padding: 20px;
       display: flex;
       flex-direction: row;
@@ -11,6 +16,11 @@
       padding: 10px;
       color: var(--text);
       
+  }
+  .footerbg{
+    position: absolute;
+    top:0;
+   
   }
 
   .logo_container {
@@ -99,7 +109,8 @@
   }
 
   .footer_bottom {
-      background-color: #1b1485;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/asset/bgfooter2.png"); 
+      background-color: #054899;
       width: 100%;
       padding: 20px;
       justify-content: space-between;
