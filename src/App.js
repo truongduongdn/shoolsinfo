@@ -1,20 +1,20 @@
 
-import Footer from './component/Footer';
-import Header from './component/Header';
-import CatalogSchool from './pages/CatalogSchool';
-import style from './App.module.css';
-import ReviewDetailPage from './pages/ReviewDetailPage';
+import './App.css';
+
 import { Route, Routes, useNavigate } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import ContactPage from './pages/ContactPage';
 function App() {
   const navigate = useNavigate();
   return (
-    <div className={style.App}>
-         <Header />
+    <div className="App">
+      
       <Routes>
-        <Route path="/" element={<CatalogSchool />} />
-        <Route path="/ReviewDetailPage" element={<ReviewDetailPage />} />
+        <Route element={<HomePage />} path='/' />
+        <Route element={<ContactPage />} path='/contacus' />
+        <Route element={<allSchool />} Path="/allschool" />
       </Routes>
-      <Footer />
+    
     </div>
   );
 }

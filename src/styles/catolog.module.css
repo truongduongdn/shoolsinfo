@@ -64,7 +64,7 @@
 
 }
 
-.chool_card:hover {
+/* .school_card:hover {
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
   -webkit-transform: translateY(-3px);
   transform: translateY(-3px);
@@ -72,7 +72,7 @@
   -webkit-transform: scale(1.1);
   -o-transform: scale(1.1);
   -ms-transform: scale(1.1);
-}
+} */
 
 .image_item {
   width: 100%;
@@ -95,6 +95,9 @@
   text-align: justify;
   padding: 10px;
   font-family: var(--bs-font-sans-serif);
+  font-size: 1.2rem !important;
+  display: show;
+  color: black;
 }
 
 .school_title {

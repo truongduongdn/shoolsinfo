@@ -1,14 +1,16 @@
 import React from 'react';
 import style from '../styles/footer.module.css';
-import logo from '../asset/img/ShoolsINfo.png';
+
 
 
 function Footer(props) {
     return (
         <div>
+        <div className='footerbg'></div>
             <div className={style.footer_container}>
+
                 <div className={style.logo_container}>
-                    <img src={logo} alt="Logo" className={style.ft_logo} />
+                    <img src='./asset/logoSchool.png' alt="Logo" className={style.ft_logo} />
                     <div className={`${style.logo_container} ${style.logo_contain}`}>
 
                         <h3>Discover, Decide, Excel: Empowering Education with SchoolsInfo.</h3>
@@ -45,14 +47,15 @@ function Footer(props) {
                         <li><a href="#">Map &Direction </a></li>
                     </ul>
                 </div>
+                
 
             </div>
-
+            
             <div className={style.footer_bottom}>
                 <p>SchoolsInfo. &copy; [2024] All rights reserved.</p>
                 <p><a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a> | <a href="#">Cookie Policy</a></p>
             </div>
-        </div>
+        </div >
 
     );
 }
