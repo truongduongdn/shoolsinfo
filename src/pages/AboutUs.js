@@ -77,6 +77,8 @@ function AboutUs(props) {
             <div className='AboutUs_page-4' ref={sectionRef}>
                 <h6 className='AboutUs_h6'>TEAM</h6>
                 <h2 className='AboutUs_main-2'>Board Management</h2>
+             
+             
                 <div className='AboutUs-4_listImage'>
                     <div className='anh_ngoai_nen-1'>
                         <img className='anh_nen-aboutUs' src={anh_nen_1}></img>
@@ -93,9 +95,9 @@ function AboutUs(props) {
                     <div className='anh_ngoai_nen-4'>
                         <img className='anh_nen-aboutUs' src={anh_nen_1}></img>
                     </div>
-
                     <div className='anh_ngoai_nen' class="overlay2"></div>
                 </div>
+                
             </div>
         </div>
     );

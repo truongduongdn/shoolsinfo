@@ -7,7 +7,7 @@ function Header(props) {
         <div className='header_page'>
             <nav className="navbar navbar-expand-sm header_navbar">
                 <a className='header_logo'> SCHOOL-INFO </a>
-                <i className="fa fa-graduation-cap"></i>
+                <i className="fa fa-graduation-cap icon_main-nav"></i>
                 <ul className="navbar-nav ">
                     <li className="nav-item ">
                         <NavLink

@@ -12,6 +12,9 @@ a{
   height: 100%;
   width: 100% ;
 }
+.fa-newspaper-o{
+  color: red;
+}
 .general_text-main{
   position: relative;
   transform: translateY(-500px);
@@ -70,12 +73,15 @@ a{
   background: var(--mauchukhac);
 }
 
-.fa-graduation-cap{
+.icon_main-nav{
   color: var(--text) !important;
   margin-left: 6px;
 }
 .icon_header{
   margin-left: 110px;
+}
+.space_4px{
+  margin-right: 4px;
 }
 /* home page 1 */
 .homepage_all-1,
@@ -206,6 +212,81 @@ a{
 .home-about-2-2:hover .overlay {
   height: 100%;
 }
+
+.home_about-2{
+  width: 500px;
+  height: 1000px;
+  background-color: var(--background);
+  color: var(--text);
+  transform: translateX(50px);
+  margin-top: 80px;
+  border-radius: 10px;
+}
+.text-aboutUs-2{
+  display: flex;
+}
+.homepage_all-2{
+  display: flex;
+}
+/* news */
+.text_main_about-2,
+.text_about-2{
+  margin-top: 10px;
+  margin-left: 120px;
+}
+.text_about-2{
+  margin-left: 20px;
+  font-size: 30px;
+}
+.AboutUs_news{
+  width: 480px;
+  height: 150px;
+  margin-left: 10px;
+  background-color: var(--text);
+  border-radius: 20px;
+  margin-bottom: 28px;
+}
+.AboutUs_news-all{
+  display: flex;
+}
+.AboutUs_news:hover{
+background-color: var(--mauchukhac);  
+}
+.textNews-about-3-fix{
+  transform: translateY(-106px); 
+  margin-left: 26px;
+  color: black;
+}
+.textNews-about-3{
+  transform: translateY(-82px);
+  margin-left: 26px;
+}
+.AboutUs_news-all-dash{
+  border: 1px solid var(--mauchukhac);
+  transform: translateY(-60px);
+  margin-left: 190px;
+  width: 100px;
+}
+.textNews-about-1{
+  font-weight: bold;
+}
+.textNews-about-2{
+  font-size: 14px;
+  margin-left: 180px;
+  transform: translateY(-50px);
+}
+
+.textNews-about-1,
+.textNews-about-3,
+.textNews-about-2{
+  color: black;
+}
+.AboutUs_news-all-img{
+  margin: 10px;
+  width: 160px;
+  object-fit: cover;
+  border-radius: 20px;
+}
 /* btn lien ket */
 .general_btn{
   color: var(--text) !important;
@@ -249,5 +330,8 @@ a{
   margin-left: 6px;
   margin-right: 4px;
 }
-
-
+/* top-level1_school */
+.Home-top-level1_school{
+  font-size: 30px;
+  font-weight: bold;
+}
