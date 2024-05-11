@@ -7,20 +7,11 @@
 .row {
   display: flex;
   align-items: flex-start;
-  background: var(--);
 }
 
-.column1 {
-  width: 45%;
+.column {
   flex: 1;
   padding: 10px;
-  background: var(----dark-background-color);
-}
-.column2 {
-  flex: 1;
-  padding: 10px;
-  background: var(--background);
-  color: var(--text);
 }
 
 .image_slider {
