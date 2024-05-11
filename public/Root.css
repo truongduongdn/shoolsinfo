@@ -2,6 +2,7 @@
   --btn: #8E5DF5;
   --text: white;
   --background: #26335D;
+  --defaul-background: #e5e7eb;
   --mauchukhac: #895FF3;
   --dark-background-color: #26335D;
   --secondary: #F3CD03;
@@ -15,4 +16,7 @@
   --light-text-color:#FFFFFF;
   --hover-text-color:#2A7CC7;
   --success-text-color:#2DC071;
+  --start-rating-color: orange;
+  --text-color: #000;
+
 }
