@@ -1,0 +1,1097 @@
+a {
+  text-decoration: none;
+}
+:root {
+  --btn: #8E5DF5;
+  --text: white;
+  --background: #26335D;
+  --mauchukhac: #895FF3;
+}
+.background_about {
+  /* background-color: var(--background) !important; */
+  height: 100%;
+  width: 100%;
+}
+.fa-newspaper-o { 
+  color: red;
+}
+.general_text-main,
+.general_text-main-1 {
+  color: rgb(48, 39, 39);
+  font-size: 90px !important;
+  transform: translateY(-420px);
+  margin-left: 540px;
+  letter-spacing: 20px !important;
+  font-weight: bold;
+}
+.general_text-main-2 {
+  transform: translateY(-440px);
+  margin-left: 520px;
+  box-shadow: 5px 5px 5px 5px gray;
+  width: 350px;
+  color: black;
+  letter-spacing: 4px;
+  position: relative;
+  font-weight: bolder;
+}
+.img_general-startPage {
+  width: 100%;
+  height: 700px;
+  opacity: 0.8;
+  position: relative;
+}
+.margin-bottom_10px {
+  margin-bottom: 40px;
+  margin-left: 34px;
+}
+/* header_nav */
+.header_page {
+  position: relative;
+  z-index: 1;
+  margin-top: 10px;
+}
+.header_navbar {
+  margin-bottom: 50px;
+  position: fixed;
+  background-color: var(--background) !important;
+  box-shadow: 5px 4px 4px #888888;
+  border: 1px solid gray;
+  border-radius: 5px;
+  z-index: 100;
+}
+.header_navbar a {
+  color: var(--text) !important;
+}
+.header_logo {
+  margin-left: 60px;
+  font-size: 22px;
+  font-style: italic;
+}
+.general_icon-news {
+  margin-right: 4px;
+  color: red;
+}
+.navbar {
+  height: 62px;
+  width: 100%;
+  z-index: 2;
+}
+.nav-item {
+  font-size: 16px !important;
+  font-weight: lighter;
+  margin-left: 80px;
+  padding: 6px;
+  position: relative;
+  border-radius: 6px;
+  background-color: var(--background);
+}
+.navbar-nav {
+  display: flex;
+}
+.nav-item:hover {
+  background: var(--mauchukhac);
+}
+
+.icon_main-nav {
+  color: var(--text) !important;
+  margin-left: 6px;
+}
+
+.icon_header {
+  margin-left: 110px;
+}
+
+.space_4px {
+  margin-right: 4px;
+}
+
+/* home page 1 */
+.homepage_all-1,
+.homepage_all-2 {
+  display: flex;
+}
+
+.homepage_all-1 {
+  background-color: var(--background);
+  transform: translateY(-200px);
+}
+
+.home_img-1 {
+  /* transform: translateY(-30px); */
+  margin: 148px;
+  margin-top: 0 !important;
+  border-radius: 210px;
+  border: solid 2px var(--mauchukhac);
+  overflow: hidden;
+}
+
+.homepage_img-1 {
+  transition: transform 0.3s ease;
+  /* Thời gian và kiểu chuyển động */
+  position: relative;
+  width: 100%;
+  height: 400px;
+
+
+}
+
+.home_img_about {
+  margin-top: 100px;
+}
+
+.homepage_img-1:hover {
+  transform: scale(1.1);
+  transform-origin: center center;
+  opacity: 0.9;
+}
+
+.text_header-main {
+  margin-left: 140px;
+  font-weight: bold;
+}
+
+.opening_sentence {
+  color: var(--mauchukhac);
+}
+
+.main_saying {
+  color: var(--text);
+  font-size: 50px;
+  letter-spacing: 4px;
+}
+
+.success {
+  transform: translateY(-30px);
+}
+
+.success_2 {
+  transform: translateY(-44px);
+}
+
+.secondary_saying {
+  color: gray
+}
+
+/* homepage 2 */
+.homepage_img-2 {
+  margin-left: 20px;
+  height: 350px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.home_about-1 {
+  width: 48% ;
+  margin-top: 100px;
+}
+
+.homepage_img-2:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.home_img-2_up {
+  margin-bottom: 70px;
+}
+
+.home_img-2_mg {
+  margin-left: 50px !important;
+}
+
+.homepage_img-2 {
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.homepage_img-2 {
+  margin-top: 180px !important;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: var(--background);
+  /* Màu sắc của hiệu ứng chạy */
+  transition: height 0.5s ease-in-out;
+}
+
+.AboutUs_img-2-4 {
+  height: 360px;
+  width: 252px;
+}
+
+.aboutUs-2-2_board,
+.home-about-2-2_board {
+  margin-left: 60px;
+  position: relative;
+  border-radius: 4px;
+  z-index: 0;
+}
+
+.home-about-2-2_board {
+  box-shadow: 5px 5px 5px 5px #888888;
+  height: 420px;
+  width: 94%;
+}
+
+.aboutUs-2-2_board:hover .overlay {
+  height: 40%;
+}
+
+.aboutUs-2-2_board {
+  overflow: hidden;
+}
+
+.home-about-2-2_board:hover .overlay {
+  height: 100%;
+}
+
+.homepage_all-2 {
+  background-color: var(--text);
+}
+
+
+.text_homepage-2 {
+  font-size: 40px;
+  margin-left: 130px;
+  position: relative;
+  z-index: 999;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.text_homepage-2-2 {
+  margin-left: 30px;
+  font-size: 30px;
+  position: relative;
+  z-index: 999;
+  transform: translateY(-30px);
+}
+
+.text_homepage-2-3 {
+  margin-left: 100px;
+  transform: translateY(-14px);
+}
+
+.text_homepage-2-4 {
+  border-radius: 30px;
+  height: 230px;
+  width: 350px;
+  object-fit: cover;
+
+}
+
+.text_homepage-2,
+.text_homepage-2-2 {
+  color: var(--mauchukhac)
+}
+.home_about-2 {
+  box-shadow: 5px 10px 8px #888888;
+  width: 100%;
+  height: 1000px;
+  background-color: var(--background);
+  color: var(--text);
+  transform: translateX(50px);
+  border-radius: 10px;
+  transform: translateY(-100px);
+  margin-left: 60px;
+}
+
+.text-aboutUs-2 {
+  display: flex;
+}
+
+/* news */
+.text_main_about-2,
+.text_about-2 {
+  margin-top: 10px;
+  margin-left: 120px;
+}
+
+.text_about-2 {
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+.AboutUs_news {
+  width: 96%;
+  height: 150px;
+  margin-left: 10px;
+  background-color: var(--text);
+  border-radius: 20px;
+  margin-bottom: 28px;
+}
+
+.AboutUs_news:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.AboutUs_news-all {
+  display: flex;
+}
+
+.textNews-about-3-fix {
+  transform: translateY(-106px);
+  margin-left: 26px;
+  color: black;
+}
+
+.textNews-about-3 {
+  transform: translateY(-82px);
+  margin-left: 26px;
+}
+
+.AboutUs_news-all-dash {
+  border: 1px solid var(--mauchukhac);
+  transform: translateY(-60px);
+  margin-left: 190px;
+  width: 100px;
+}
+
+.textNews-about-1 {
+  font-weight: bold;
+}
+.multiline-ellipsis{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4; /* Số dòng tối đa */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5; /* Điều chỉnh chiều cao dòng */
+  max-height: calc(1.5em * 4); /* Điều chỉnh theo số dòng tối đa */
+}
+.textNews-about-2 {
+  font-size: 14px;
+  margin-left: 180px;
+  transform: translateY(-50px);
+}
+
+.textNews-about-1,
+.textNews-about-3,
+.textNews-about-2 {
+  color: black;
+}
+
+.AboutUs_news-all-img {
+  margin: 10px;
+  width: 160px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* btn lien ket */
+.general_btn {
+  color: var(--text) !important;
+  width: 160px !important;
+}
+
+.general_btn:hover {
+  background-color: var(--text) !important;
+  color: var(--btn) !important;
+}
+
+.btn_aboutUs {
+  background-color: var(--btn);
+  margin-right: 10px;
+
+}
+
+.btn_contact {
+  border: solid 1px white;
+}
+
+.btn_home-third-2,
+.btn_home-third {
+  background-color: var(--btn);
+  color: var(--background);
+  border-radius: 20px;
+  margin-left: 360px;
+  font-size: 16px;
+  transform: translateY(-100px);
+  color: var(--text);
+}
+
+.btn_home-third-2 {
+  font-size: 24px;
+  width: 250px;
+  /* margin-left: 420px; */
+}
+
+.btn_home-third {
+  width: 140px;
+  opacity: 0.9;
+}
+
+.fa-globe {
+  margin-right: 6px;
+  margin-left: 10px;
+}
+
+.fa-child {
+  margin-left: 6px;
+  margin-right: 4px;
+}
+
+/* top-level1_school */
+.Home-top-level1_school {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.top_level1 {
+  width: 630px;
+}
+
+.top_level2-3 {
+  width: 560px;
+}
+
+.top_level2-3,
+.top_level1 {
+  height: 180px;
+  box-shadow: 5px 5px 5px 5px #888888;
+  border-radius: 14px;
+}
+
+.top_level2-3:hover,
+.top_level1:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  background-color: #26335D;
+  color: var(--text);
+}
+
+.top_level23-about {
+  width: 240px;
+  height: 136px;
+  margin: 24px 10px;
+}
+
+.top_level1-about {
+  width: 260px;
+  height: 136px;
+  margin: 24px 10px;
+}
+
+.top_level1-img {
+  width: 100%;
+  height: 136px;
+  border-radius: 6px;
+}
+
+
+.top_level1-assess-point {
+  background-color: #4cb648;
+  height: 30px;
+  width: 30px;
+  color: var(--text);
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.top_level1_text_main {
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.top_level2-3,
+.top_level1,
+.top_level1-assess {
+  display: flex;
+}
+
+.icon-facilities {
+  color: var(--mauchukhac);
+  margin-right: 6px;
+}
+
+.top_level1-assess-assess {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  transform: translateY(-4px);
+}
+
+.top_level1-assess-2 {
+  transform: translateY(-20px);
+  color: gray;
+  font-size: 12px !important;
+}
+
+.top_level1-capacity,
+.top_level2_3-capacity {
+  background-color: #eef1f3;
+  height: 30px;
+  color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  margin-left: 4px;
+  margin-bottom: 4px;
+}
+
+.top_level1-capacity {
+  width: 300px;
+}
+
+.top_level1-capacity-all {
+  margin-left: 10px;
+}
+
+.top_level1-tranlate_general {
+  transform: translateY(-30px);
+}
+
+.home-about-2-2_top_school-1 {
+  margin-left: 34px;
+  margin-top: 80px;
+}
+
+/* fourth page */
+.home_about_4 {
+  height: 262px;
+  width: 1142px;
+  margin-left: 80px;
+  opacity: 0.8;
+  object-fit: cover;
+  border-radius: 20px;
+  position: relative;
+  z-index: 0;
+}
+
+.homepage_all-4 {
+  background: white !important;
+  margin: 40px 0;
+}
+
+.home_about_4-main {
+  height: 100px;
+  margin-left: 200px;
+  width: 200px;
+  transform: translateY(-240px);
+  font-weight: bold;
+  color: var(--background);
+  opacity: 0.9;
+  height: 48px;
+  border-radius: 6px;
+  box-shadow: 5px 5px gray;
+  width: 188px;
+  background-color: var(--text);
+}
+
+.home_about_4-main-main {
+  font-size: 22px;
+  margin-left: 30px;
+}
+
+.home_about_4-main-second {
+  font-size: 12px;
+  margin-left: 26px;
+  transform: translateY(-20px) !important;
+  letter-spacing: 2px;
+  color: black;
+}
+
+.home_about_4-main-third {
+  font-size: 60px;
+  color: black;
+  letter-spacing: 4px;
+  font-weight: bolder;
+  transform: translateY(-220px);
+  margin-left: 260px;
+}
+
+/* fove page */
+.homepage_all-5 {
+  background-color: white !important;
+  display: flex;
+  transform: translateY(-200px);
+}
+
+.AboutUs_page-4 {
+  background-color: var(--mauchukhac);
+}
+
+.AboutUs_page-4_text {
+  position: absolute;
+  z-index: 10;
+  font-weight: bolder;
+}
+
+.AboutUs_page-4_text-2 {
+  transform: translateY(-10px);
+  margin-left: 60px !important;
+}
+
+.AboutUs_page-general {
+  margin-left: 50px;
+  color: rgb(51, 172, 202);
+}
+
+.general-icon_last {
+  color: orangered;
+  margin-left: 48px;
+  font-size: 20px;
+}
+/* ----------------------REPONSIVE------------- */
+/* Extra small devices (phones, 600px and down) ---------------------------------------------------------*/
+@media only screen and (max-width: 600px ) {
+  /* H1 */
+  .homepage_all-1 {
+    width: 100%;
+    flex-direction: column;
+  }
+  .general_text-main-1,
+  .general_text-main-2 {
+    margin-left: 60px;
+  }
+  .general_text-main-1 {
+    margin-top: 50px;
+  }
+  .text_header-main {
+    margin-left: 50px;
+  }
+  .img_general-startPage {
+    height: 500px !important;
+  }
+
+  /* H2 */
+  .home_img-1 {
+    margin-left: 0;
+    border-radius: 10px;
+  }
+  .home_about-1 {
+    width: 100% ;
+  }
+  .home_img-1,
+  .homepage_img-1 {
+    height: 400px;
+    width: 100%;
+  }
+
+  .home-about-2-2_board {
+    height: 500px;
+    margin-left: 20px;
+  }
+  .btn_home-third-2,
+  .btn_home-third {
+    transform: translateY(0);
+    transform: translateX(-220px);
+  }
+
+  .btn_home-third {
+    margin-left: 420px;
+  }
+
+  .btn_home-third-about {
+    margin-top: 20px;
+  }
+
+  /* H3 */
+  .homepage_all-2 {
+    flex-direction: column;
+  }
+
+  /* H4 */
+  .home_about_4 {
+    width: 500px;
+    margin-left: 40px;
+  }
+
+  .home_about_4-main-third {
+    font-size: 40px;
+    margin-left: 30px;
+    text-align: center;
+  }
+
+  .homepage_all-5 {
+    flex-direction: column;
+  }
+  .homepage_all-4 {
+    margin: 0;
+  }
+  .home_about_4 {
+    width: 100%;
+    margin: 0;
+  }
+  /* H5 */
+  .home-about-2-2_top_school-1 {
+    margin-left: 0;
+  }
+
+  .margin-bottom_10px {
+    margin-left: 10px;
+  }
+
+  .top_level1,
+  .top_level2-3 {
+    width: 98%;
+  }
+
+  /* H6 */
+  .home_about-2 {
+    margin-top: 100px;
+    margin-left: 0;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) ------------------------------------------ */
+@media (min-width: 600px) and (max-width: 768px){
+    /* H1 */
+    .homepage_all-1 {
+      width: 100%;
+      flex-direction: column;
+    }
+    .general_text-main-1,
+    .general_text-main-2 {
+      margin-left: 60px;
+    }
+    .general_text-main-1 {
+      margin-top: 50px;
+    }
+    .text_header-main {
+      margin-left: 50px;
+    }
+    .img_general-startPage {
+      height: 500px !important;
+    }
+  
+    /* H2 */
+    .home_img-1 {
+      margin-left: 0;
+      border-radius: 10px;
+    }
+    .home_about-1 {
+      width: 100% ;
+    margin-left: 90px;
+    }
+    .home_img-1,
+    .homepage_img-1 {
+      height: 400px;
+      width: 100%;
+    }
+  .text_homepage-2-4{
+    margin-left: 20px;
+    width: 280px;
+    height: 300px;
+  }
+    .home-about-2-2_board {
+      height: 500px;
+      margin-left: 20px;
+    }
+    .btn_home-third-2,
+    .btn_home-third {
+      transform: translateX(-330px); 
+    }
+.home_board_text-img{
+  display: flex;
+}
+    .btn_home-third {
+      margin-left: 420px;
+    }
+    .btn_home-third-about {
+      margin-top: 20px;
+      margin-left: 0;
+      margin-top: 240px;
+    }
+    /* H3 */
+    .homepage_all-2 {
+      flex-direction: column;
+    }
+  
+    /* H4 */
+    .home_about_4 {
+      width: 500px;
+      margin-left: 40px;
+    }
+  .home_about_4-main{
+     margin-left:280px;
+    }
+    .home_about_4-main-third {
+      font-size: 40px;
+      margin-left: 2px;
+      text-align: center;
+    }
+  
+    .homepage_all-5 {
+      flex-direction: column;
+    }
+    .homepage_all-4 {
+      margin: 0;
+    }
+    .home_about_4 {
+      width: 100%;
+      margin: 0;
+    }
+    /* H5 */
+    .home-about-2-2_top_school-1 {
+      margin-left: 0;
+    }
+  
+    .margin-bottom_10px {
+      margin-left: 10px;
+    }
+  
+    .top_level1,
+    .top_level2-3 {
+      width: 98%;
+    }
+  
+    /* H6-NEWS */
+    .home_about-2 {
+      margin-top: 100px;
+      margin-left: 0;
+    }
+    .textNews-about-3-fix{
+      transform: translateY(-90px);
+    }
+    .textNews-about-3{
+      transform: translateY(-70px);
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) ----------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 992px){
+  /* H1 */
+  .general_text-main-1,
+  .general_text-main-2 {
+    margin-left: 60px;
+  }
+  .general_text-main-1 {
+    margin-top: 50px;
+  }
+  .text_header-main {
+    margin-left: 50px;
+  }
+  .img_general-startPage {
+    height: 500px !important;
+  }
+  /* H2 */
+  .home_img-1 {
+    margin-left: 0;
+    border-radius: 10px;
+  }
+  .home_about-1 {
+    width: 100% ;
+  }
+  .home_img-1,
+  .homepage_img-1 {
+    height: 400px;
+    width: 100%;
+  }
+  .home_img-1{
+    transform: translateX(-100px);
+    border-radius: 300px;
+    height: 350px;
+  }
+  /* H3 */
+  .text_homepage-2-4{
+    width: 500px;
+    height: 260px;
+    object-fit: cover;
+    margin-left: 110px;
+  }
+.home-about-2-2_board {
+  height: 520px;
+  margin-left: 20px;
+  width: 96%;
+}
+.text_homepage-2{
+  margin-left: 200px;
+}
+.text_homepage-2-2{
+  margin-left: 100px;
+}
+.btn_home-third-2,
+.btn_home-third {
+  transform: translateY(0);
+  transform: translateX(32px);
+}
+.btn_home-third {
+  margin-left: 420px;
+}
+
+.btn_home-third-about {
+  margin-top: 20px;
+}
+.homepage_all-2 {
+  flex-direction: column;
+}
+  /* H4 */
+  .home_about_4 {
+    width: 500px;
+    margin-left: 40px;
+  }
+.home_about_4-main{
+   margin-left:280px;
+  }
+  .home_about_4-main-third {
+    font-size: 40px;
+    margin-left: 2px;
+    text-align: center;
+  }
+
+  .homepage_all-5 {
+    flex-direction: column;
+  }
+  .homepage_all-4 {
+    margin: 0;
+  }
+  .home_about_4 {
+    width: 100%;
+    margin: 0;
+  }
+  /* H5 */
+  .home-about-2-2_top_school-1 {
+    margin-left: 0;
+  }
+  .top_level1-img{
+    width: 140%;
+  }
+  .top_level23-about,
+  .top_level1-about{
+    margin-right: 120px;
+  }
+  .margin-bottom_10px {
+    margin-left: 10px;
+  }
+  .top_level1,
+  .top_level2-3 {
+    width: 98%;
+  }
+  /* H6-NEWS */
+  .home_about-2 {
+    margin-top: 100px;
+    margin-left: 0px;
+    /* height:1100px ; */
+  }
+  .AboutUs_news {
+    height: 180px;
+    margin-left: 20px;
+  }
+  .AboutUs_news-all-img {
+    margin: 10px;
+    width: 230px;
+  }
+  .AboutUs_news-all-dash,
+  .textNews-about-2{
+    margin-left: 250px;
+  }
+  .textNews-about-3-fix,
+  .textNews-about-3{
+    transform: translateY(-70px);
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) --------------------------------------------------------------*/
+@media (min-width: 992px) and (max-width: 1200px){
+   /* H1 */
+   .homepage_all-1 {
+    width: 100%;
+  }
+  .general_text-main-1,
+  .general_text-main-2 {
+    margin-left: 250px;
+  }
+  .general_text-main-1 {
+    margin-top: 50px;
+  }
+  .text_header-main {
+    margin-left: 50px;
+  }
+  .img_general-startPage {
+    height: 500px !important;
+  }
+    /* H3 */
+    .text_homepage-2-4{
+      width: 460px;
+      height: 260px;
+      object-fit: cover;
+    }
+  .home-about-2-2_board {
+    height: 520px;
+    margin-left: 20px;
+    width: 86%;
+  }
+  .btn_home-third-2,
+  .btn_home-third {
+    transform: translateY(0);
+    transform: translateX(-220px);
+  }
+
+  .btn_home-third {
+    margin-left: 420px;
+  }
+
+  .btn_home-third-about {
+    margin-top: 20px;
+  }
+   /* H6-NEWS */
+  
+    /* H4 */
+    .home_about-2{
+      transform: translateX(-60px);
+    }
+  .home_about_4 {
+    width: 500px;
+    margin-left: 40px;
+  }
+.home_about_4-main{
+   margin-left:280px;
+  }
+  .home_about_4-main-third {
+    font-size: 40px;
+    margin-left: 2px;
+    text-align: center;
+  }
+  .homepage_all-4 {
+    margin: 0;
+  }
+  .home_about_4 {
+    width: 100%;
+    margin: 0;
+  }
+    /* H5-list-school */
+    .home-about-2-2_top_school-1 {
+      margin-left: 0;
+    }
+    .margin-bottom_10px {
+      margin-left: 10px;
+    }
+    /* H2 */
+    .home_img-1 {
+    margin-left: 0;
+    border-radius: 10px;
+  }
+  .home_about-1 {
+    width: 100% ;
+  }
+  .home_img-1,
+  .homepage_img-1 {
+    height: 400px;
+    width: 100%;
+  }
+  .home_img-1{
+    transform: translateX(-100px);
+    border-radius: 300px;
+    height: 350px;
+  }
+  /* H6 */
+  .textNews-about-3-fix,
+  .textNews-about-3{
+    transform: translateY(-90px);
+  }
+  .multiline-ellipsis{
+    -webkit-line-clamp: 2; /* Số dòng tối đa */
+    max-height: calc(1.5em * 2); /* Điều chỉnh theo số dòng tối đa */
+  }
+  .textNews-about-2{
+    margin-top: 20px;
+  }
+  .AboutUs_news-all-dash{
+    margin-left: 300px;
+  }
+}
