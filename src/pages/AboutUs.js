@@ -7,6 +7,10 @@ import anh_6 from '../assets/images/hinh-anh-van-phong-cong-ty-casanova-mccann-2
 import anh_7 from '../assets/images/mau-thiet-ke-van-phong-hien-dai-dep.jpg'
 import anh_3 from '../assets/images/cham-soc-cay-canh-cong-trinh.jpg'
 import anh_nen_1 from '../assets/images/z5378342114979_07371fba7db92a48385c228c535b47b1.jpg'
+import anh_nen_2 from '../assets/images/Screenshot 2024-05-06 182011.png'
+import Header from '../component/Header';
+import Footer from '../component/Footer';
+
 function AboutUs(props) {
     let [imageAboutUs, setImageAboutUs] = useState(anh_2)
     let sectionRef = useRef(null)
@@ -43,8 +47,10 @@ function AboutUs(props) {
     function scroolToSection() {
         sectionRef.current.scrollIntoView({ behavior: 'smooth' })
     }
+
     return (
         <div className=' AboutUs_page background_about'>
+              <Header />
             {/* first page */}
             <div className='AboutUs_page-1'>
                 <img className='img_general-startPage ' src={background_aboutUs} alt='truong hoc about us'></img>
@@ -69,36 +75,56 @@ function AboutUs(props) {
             </div>
             {/* third page */}
             <div className='AboutUs_page-3'>
+                <button className='btn AboutUs-3_img-btn2' onClick={handleChangeImageAboutUs_before}>-</button>
                 <img className='AboutUs-3_img' src={imageAboutUs} alt='Hình ảnh' />
                 <button className='btn AboutUs-3_img-btn' onClick={handleChangeImageAboutUs}>+</button>
-                <button className='btn AboutUs-3_img-btn2' onClick={handleChangeImageAboutUs_before}>-</button>
             </div>
             {/* fouth page */}
             <div className='AboutUs_page-4' ref={sectionRef}>
                 <h6 className='AboutUs_h6'>TEAM</h6>
                 <h2 className='AboutUs_main-2'>Board Management</h2>
-             
-             
                 <div className='AboutUs-4_listImage'>
-                    <div className='anh_ngoai_nen-1'>
-                        <img className='anh_nen-aboutUs' src={anh_nen_1}></img>
+                    {/* list1 */}
+                    <div className='home-about-2-2 '>
+                        <div className='aboutUs-2-2_board'>
+                            <img className='AboutUs_img-2-4' src={anh_nen_1}></img>
+                            <div class="overlay">
+                                <p className='AboutUs_page-general AboutUs_page-4_text'>Le Thanh Phu</p>
+                                <p className='AboutUs_page-general AboutUs_page-4_text-2'>MANAGER</p>
+                                <a href='https://www.facebook.com/profile.php?id=100014940010080&mibextid=LQQJ4d'>
+                                    <i class="general-icon_last fa-brands fa-facebook "></i>
+                                </a>
+                                <a href='https://www.instagram.com/phule_eee?igsh=NmFyc3lzeTUzcXJs&utm_source=qr'>
+                                    <i class="general-icon_last fa-brands fa-instagram"></i>
+                                </a>
+                                <a href='https://www.tiktok.com/@phu_leeee?_t=8m7nwWX74oD&_r=1'>
+                                    <i class="general-icon_last fa-brands fa-tiktok"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-
-                    <div className='anh_ngoai_nen-2'>
-                        <img className='anh_nen-aboutUs' src={anh_nen_1}></img>
+                    {/* list2 */}
+                    <div className='home-about-2-2'>
+                        <div className='aboutUs-2-2_board'>
+                            <img className='AboutUs_img-2-4' src={anh_nen_2}></img>
+                            <div class="overlay">
+                                <p className='AboutUs_page-general AboutUs_page-4_text'>Truong Duong</p>
+                                <p className='AboutUs_page-general AboutUs_page-4_text-2'>MANAGER</p>
+                                <a href='https://www.facebook.com/profile.php?id=100014940010080&mibextid=LQQJ4d'>
+                                    <i class="general-icon_last fa-brands fa-facebook "></i>
+                                </a>
+                                <a href='https://www.instagram.com/phule_eee?igsh=NmFyc3lzeTUzcXJs&utm_source=qr'>
+                                    <i class="general-icon_last fa-brands fa-instagram"></i>
+                                </a>
+                                <a href='https://www.tiktok.com/@phu_leeee?_t=8m7nwWX74oD&_r=1'>
+                                    <i class="general-icon_last fa-brands fa-tiktok"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-
-                    <div className='anh_ngoai_nen-3'>
-                        <img className='anh_nen-aboutUs' src={anh_nen_1}></img>
-                    </div>
-
-                    <div className='anh_ngoai_nen-4'>
-                        <img className='anh_nen-aboutUs' src={anh_nen_1}></img>
-                    </div>
-                    <div className='anh_ngoai_nen' class="overlay2"></div>
                 </div>
-                
             </div>
+            <Footer />
         </div>
     );
 }
